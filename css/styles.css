@@ -5,6 +5,7 @@
     src: url("../fonts/WebFont.woff") format("woff");
 }
 body {
+    position: relative;
     background-image: url(../img/bg_sky.png);
     background-repeat: no-repeat;
     background-size: cover;
@@ -176,7 +177,10 @@ main {
     align-content: space-between;
     flex-wrap: wrap;
 }
+
+/* ----------ПОЛЕ КАРТИНОК----------- */
 .galleryImages > div {
+    position: relative;
     width: 288px;
     height: 155px;
 }
@@ -208,7 +212,26 @@ main {
     background-image: url(../img/gallery_img/image_9.png);
 }
 
-/* ----------ПОЛЕ КАРТИНОК----------- */
+/* ------------ZOOM------------- */
+.galleryImages > div:hover {
+    filter: brightness(0.5);
+}
+.image1:before {
+    display: none;
+    position: absolute;
+    top: 39%;
+    right: 45%;
+    content: "";
+    width: 33px;
+    height: 33px;
+    background-image: url(../img/zoom_icon.png);
+    background-repeat: no-repeat;
+    opacity: 0.7;
+}
+.image1:hover .image1:before {
+    display: block;
+}
+
 
 
 /*================FOOTER=========== */
@@ -223,12 +246,12 @@ footer {
 /* -----------SOCIAL LINKS---------- */
 .socialLinks {
     display: flex;
-    flex-direction: row;
     justify-content: space-between;
     position: absolute;
     width: 198px;
-    top: 159px;
-    left: 413px;
+    bottom: -65px;
+    left: 50%;
+    transform: translateX( -50%);
     overflow: hidden;
     font-size: 0;
     padding: 0;
@@ -269,20 +292,23 @@ footer {
 .bgIn:hover {
     background-position-x: -123px;
 }
-.copyRights {
-    position: absolute;
-    top: 200px;
-    width: 1024px;
-    height: 61px; 
-}
 
 /* ---------------COPY RIGHTS-------------- */
+.copyRights {
+    position: absolute;
+    bottom: -126px;
+    left: 50%;
+    transform: translateX( -50%);
+    margin: auto;
+    height: 61px;
+    text-align: center; 
+}
 .copyRights > p {
     font-family: "ArialRegular", sans-serif;
     text-align: center;
     font-size: 12px;
     color: #fff;
-    margin-top: 24px;   
+    margin: 24px 0 24px 0;   
 }
 
 /* =============КНОПКА НА НАЧАЛО ЭКРАНА========== */
