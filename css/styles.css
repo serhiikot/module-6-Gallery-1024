@@ -5,6 +5,7 @@
     src: url("../fonts/WebFont.woff") format("woff");
 }
 body {
+    position: relative;
     background-image: url(../img/bg_sky.png);
     background-repeat: no-repeat;
     background-size: cover;
@@ -245,12 +246,12 @@ footer {
 /* -----------SOCIAL LINKS---------- */
 .socialLinks {
     display: flex;
-    flex-direction: row;
     justify-content: space-between;
     position: absolute;
     width: 198px;
-    top: 159px;
-    left: 413px;
+    bottom: -65px;
+    left: 50%;
+    transform: translateX( -50%);
     overflow: hidden;
     font-size: 0;
     padding: 0;
@@ -291,14 +292,17 @@ footer {
 .bgIn:hover {
     background-position-x: -123px;
 }
+
+/* ---------------COPY RIGHTS-------------- */
 .copyRights {
     position: absolute;
     bottom: -126px;
-    width: 1024px;
-    height: 61px; 
+    left: 50%;
+    transform: translateX( -50%);
+    margin: auto;
+    height: 61px;
+    text-align: center; 
 }
-
-/* ---------------COPY RIGHTS-------------- */
 .copyRights > p {
     font-family: "ArialRegular", sans-serif;
     text-align: center;
