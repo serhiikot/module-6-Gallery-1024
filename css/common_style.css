@@ -8,6 +8,7 @@ body {
     position: relative;
     background-image: url(../img/bg_sky.png);
     background-repeat: no-repeat;
+    background-attachment: fixed;
     background-size: cover;
     margin: 0;
 }
@@ -151,84 +152,6 @@ header {
     text-decoration: underline;
 }
 
-/*================MAIN=========== */
-
-main {
-    max-width: 1024px;
-    margin: auto;
-    background-color: #fff;
-    border-top: 1px solid #f1f7fb;
-    border-bottom: 1px solid #f1f7fb;
-}
-.galleryHeader {
-    font-family: 'Pathway Gothic One', sans-serif;
-    font-size: 32px;
-    font-weight: 200;
-    margin: 97px 61px 47px 61px;
-    text-transform: uppercase;
-    color: #263555;
-}
-.galleryImages {
-    width: 902px;
-    height: 542px;
-    margin: 0 61px 140px 61px;
-    display: flex;
-    justify-content: space-between;
-    align-content: space-between;
-    flex-wrap: wrap;
-}
-
-/* ----------ПОЛЕ КАРТИНОК----------- */
-.galleryImages > div {
-    position: relative;
-    width: 288px;
-    height: 155px;
-}
-.image1 {
-    background-image: url(../img/gallery_img/image_1.png);
-}
-.image2 {
-    background-image: url(../img/gallery_img/image_2.png);
-}
-.image3 {
-    background-image: url(../img/gallery_img/image_3.png);
-}
-.image4 {
-    background-image: url(../img/gallery_img/image_4.png);
-}
-.image5 {
-    background-image: url(../img/gallery_img/image_5.png);
-}
-.image6 {
-    background-image: url(../img/gallery_img/image_6.png);
-}
-.image7 {
-    background-image: url(../img/gallery_img/image_7.png);
-}
-.image8 {
-    background-image: url(../img/gallery_img/image_8.png);
-}
-.image9 {
-    background-image: url(../img/gallery_img/image_9.png);
-}
-
-/* ------------ZOOM------------- */
-
-.galleryImages img {
-    display: none;
-    position: absolute;
-    width: 33px;
-    height: 33px;
-    top: 50%;
-    left: 50%;
-    transform: translate( -50%, -50%);
-}
-.galleryImages > div:hover > img {
-    display: block;  
-}
-.galleryImages > div:hover {
-    filter: brightness(0.5);  
-}
 /*================FOOTER=========== */
 footer {
     position: relative;
@@ -304,35 +227,34 @@ footer {
     height: 40px;
     background-image: url(../img/social_icons.png);
     background-repeat: no-repeat;
-    background-position-y: 0;
 }
 .bgTwitter {
-    background-position-x: 0;
+    background-position: 0 0;
 }
 .bgFacebook {
-    background-position-x: -41px;
+    background-position: -41px 0;
 }
 .bgGoogle {
-    background-position-x: -82px;
+    background-position: -82px 0;
 }
 .bgIn {
-    background-position-x: -123px;
+    background-position: -123px 0;
 }
-.socialLinks a:hover {
-    background-position-y: -41px;
+.bgTwitter:hover {
+    background-position: 0 -41px;
     transform: scale(0.95);
 }
-.bgTwitter {
-    background-position-x: 0;
-}
 .bgFacebook:hover {
-    background-position-x: -41px;
+    background-position: -41px -41px;
+    transform: scale(0.95);
 }
 .bgGoogle:hover {
-    background-position-x: -82px;
+    background-position: -82px -41px;
+    transform: scale(0.95);
 }
 .bgIn:hover {
-    background-position-x: -123px;
+    background-position: -123px -41px;
+    transform: scale(0.95);
 }
 
 /* ---------------COPY RIGHTS-------------- */
