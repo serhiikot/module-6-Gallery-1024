@@ -215,7 +215,7 @@ main {
 /* ------------ZOOM------------- */
 
 .galleryImages img {
-    visibility: hidden;
+    display: none;
     position: absolute;
     width: 33px;
     height: 33px;
@@ -224,8 +224,7 @@ main {
     transform: translate( -50%, -50%);
 }
 .galleryImages > div:hover > img {
-    visibility: visible;
-    
+    display: block;  
 }
 .galleryImages > div:hover {
     filter: brightness(0.5);  
@@ -233,12 +232,59 @@ main {
 /*================FOOTER=========== */
 footer {
     position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
     width: 1024px;
     height: 133px;
     margin: auto;
     background-color: #30455b;
 }
 
+/* ----------FOOTER LINKS-------- */
+.footerLinks {
+    width: 180px;
+    padding: 0;
+    list-style: none;
+}
+.footerLinks a {
+    font-family: 'Open Sans', sans-serif;
+    font-size: 16px;
+    font-weight: 200;
+    text-decoration: none;
+    text-transform: uppercase;
+    line-height: 2;
+    color: #fff;
+}
+/* --------CONTACTS--------- */
+.contacts {
+    width: 180px;
+    height: 65px;
+    line-height: 1.7;
+    color: #fff;
+}
+.contacts > h6 {
+    font-family: 'Open Sans', sans-serif;
+    font-size: 18px;
+    font-weight: 200;
+    text-transform: uppercase;
+    margin: 0;
+}
+.contacts > p {
+    font-family: 'ArialRegular', sans-serif;
+    font-size: 12px;
+    font-weight: 200;
+    margin: 0;
+    text-decoration: none;
+}
+.contacts a  {
+    font-family: 'ArialRegular', sans-serif;
+    font-size: 12px;
+    font-weight: 200;
+    margin: 0;
+    text-decoration: none;
+    color: #fff;
+}
 /* -----------SOCIAL LINKS---------- */
 .socialLinks {
     display: flex;
