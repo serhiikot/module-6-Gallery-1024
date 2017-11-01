@@ -53,6 +53,6 @@ main {
 .galleryImages > div:hover > .zoom {
     display: block;  
 }
-.galleryImages > div:hover > img {
+.galleryImages > div:hover a {
     filter: brightness(0.5);  
 }
