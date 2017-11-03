@@ -218,32 +218,19 @@ footer {
     background-repeat: no-repeat;
 }
 .bgTwitter {
-    background-position: 0 0;
+    background-position: -1px -1px;
 }
 .bgFacebook {
-    background-position: -41px 0;
+    background-position: -43px -1px;
 }
 .bgGoogle {
-    background-position: -82px 0;
+    background-position: -85px -1px;
 }
 .bgIn {
-    background-position: -123px 0;
+    background-position: -127px -1px;
 }
-.bgTwitter:hover {
-    background-position: 0 -41px;
-    transform: scale(0.95);
-}
-.bgFacebook:hover {
-    background-position: -41px -41px;
-    transform: scale(0.95);
-}
-.bgGoogle:hover {
-    background-position: -82px -41px;
-    transform: scale(0.95);
-}
-.bgIn:hover {
-    background-position: -123px -41px;
-    transform: scale(0.95);
+.socialLinks a:hover {
+    transform: scale( 0.9);
 }
 
 /* ---------------COPY RIGHTS-------------- */
